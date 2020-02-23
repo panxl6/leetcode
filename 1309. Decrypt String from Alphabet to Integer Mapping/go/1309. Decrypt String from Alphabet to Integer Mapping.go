@@ -38,49 +38,6 @@ Output: "abcdefghijklmnopqrstuvwxyz"
  */
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
-
 func main() {
-	fmt.Println(freqAlphabets("1326#"))
-}
 
-func freqAlphabets(t string) string {
-	s := []byte(t)
-	flagStr := "#"
-	flag := []byte(flagStr)
-	var alphaArray []string
-	for i := len(s) - 1; i >= 0; i-- {
-		if s[i] == flag[0] {
-			alphaArray = append(alphaArray, string(s[i-2:i+1]))
-			i -= 2
-		} else {
-			alphaArray = append(alphaArray, string(s[i]))
-		}
-	}
-
-	var result string
-	dataMap := genDigitToAlphaMap()
-	for i := len(alphaArray) - 1; i >= 0; i-- {
-		result += dataMap[alphaArray[i]]
-	}
-	return result
-}
-
-const ALPHA_SIZE = 26
-
-func genDigitToAlphaMap() map[string]string {
-	dataMap := make(map[string]string)
-	for i := 1; i <= ALPHA_SIZE; i++ {
-		if i < 10 {
-			key := strconv.Itoa(i)
-			dataMap[key] = fmt.Sprintf("%c", i+96)
-		} else {
-			key := strconv.Itoa(i) + "#"
-			dataMap[key] = fmt.Sprintf("%c", i+96)
-		}
-	}
-	return dataMap
 }

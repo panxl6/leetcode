@@ -33,6 +33,7 @@ func getNumberFromBitArray(array []int) int {
 | 题目　| 介绍 |
 |---|---|
 | [1281. Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)| 求一个数的诸位之积和诸位之和的差值 |
+| [1295. Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)| 统计数据位数为奇数的数 |
 | [1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number)| 将只有6和9组成的整数，只调整一个数字，求最大的结果 |
 
 ## 递归
