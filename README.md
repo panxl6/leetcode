@@ -35,3 +35,11 @@ func getNumberFromBitArray(array []int) int {
 | [1281. Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)| 求一个数的诸位之积和诸位之和的差值 |
 | [1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number)| 将只有6和9组成的整数，只调整一个数字，求最大的结果 |
 
+## 递归
+如果你当前处理的事情存在依赖，需要先做其他事情，然后再回过头来处理眼下的事情，那么你需要把当前的信息先记录下来。栈就是符合后进先出的一种数据结构。但是往往递归来得比栈更加容易实现，理解起来也比较直观。递归既是一种算法技巧，也是许多编程语言的一种特性。
+
+典型的有：二叉树的遍历、翻转链表。
+
+| 题目　| 介绍 |
+|---|---|
+| [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)| 将链表的数据位转换成一个整数 |
