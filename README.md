@@ -44,3 +44,10 @@ func getNumberFromBitArray(array []int) int {
 | 题目　| 介绍 |
 |---|---|
 | [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)| 将链表的数据位转换成一个整数 |
+
+
+## 双指针
+
+| 题目　| 介绍 |
+|---|---|
+| [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)| 有序数组求平方和 |
